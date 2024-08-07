@@ -2,7 +2,6 @@ import os
 import pickle
 import asyncio
 from datetime import datetime, timedelta
-import pytz
 
 class AsyncTaskRunner:
     def __init__(self, task_time, timezone):
