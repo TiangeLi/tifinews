@@ -50,7 +50,7 @@ async def refresh_data():
 
 async def main_task():
     email_client, email_data = await refresh_data()
-    email_client.send_email(subject=EMAIL_SUBJECT, body=email_data, recipients=RECIPIENTS, debug=True)
+    email_client.send_email(subject=EMAIL_SUBJECT, body=email_data, recipients=RECIPIENTS, debug=False)
 
 
 # -------------------------------------
