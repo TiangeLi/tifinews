@@ -13,7 +13,7 @@ import asyncio
 
 # TIFI Specific Parameters
 EMAIL_SUBJECT = "Tifi Newsletter"
-RECIPIENTS = ["tiangeli333@gmail.com"]#, "fmoloney01@gmail.com"]
+RECIPIENTS = ["tiangeli333@gmail.com", "fmoloney01@gmail.com"]
 HOME_ADDRESS = '620 Bathurst St'
 WORK_ADDRESS = 'CAMH'
 EMAIL_TIME = (8, 10, 0) # 8:10 AM
@@ -60,6 +60,6 @@ async def main():
     await runner.run_loop(main_task)
 
 if __name__ == "__main__":
-    asyncio.run(main_task())
-    #print("Starting Tifi...")
-    #asyncio.run(main())
+    print("Starting Tifi...")
+    asyncio.run(main_task())  # cron job
+    #asyncio.run(main())  # run loop
