@@ -11,12 +11,8 @@ from datetime import date
 from pytz import timezone
 import asyncio
 
-# TIFI Specific Parameters
-EMAIL_SUBJECT = "Tifi Newsletter"
-RECIPIENTS = ["tiangeli333@gmail.com", "fmoloney01@gmail.com"]
-HOME_ADDRESS = '620 Bathurst St'
-WORK_ADDRESS = 'CAMH'
-EMAIL_TIME = (8, 10, 0) # 8:10 AM
+from dotenv import load_dotenv
+load_dotenv(override=True)
 
 # Get working parameters (timezone, latlng, timezone)
 tf = TimezoneFinder()
